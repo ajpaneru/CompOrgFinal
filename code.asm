@@ -22,3 +22,12 @@ input_loop:
     la $a0, error_display
     syscall
     j input_loop
+
+fibonacci_sequence:
+    li $t1, 0
+    li $t2, 1
+    li $t3, 0
+
+    li $v0, 4
+    la $a0, fib_display
+    syscall
